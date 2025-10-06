@@ -2,25 +2,31 @@
 ## Video explicativo: 
 # Práctica 2 – Huffman Canónico
 
-Este proyecto implementa 
+Este proyecto implementa en C++ el **algoritmo de Huffman** y su variante **Huffman Canónico** para compresión de texto.  
+El programa recibe una cadena de al menos 30 caracteres y produce:
+
+- Tabla de frecuencias de cada símbolo.
+- Construcción del árbol de Huffman.
+- Códigos de Huffman **no-canónicos** y sus longitudes.
+- Códigos **canónicos** derivados de las longitudes.
+- Visualización textual del árbol en preorden.
+- Bitstream comprimido (primeros 128 bits y versión en hexadecimal).
+- Cálculo de reducción lograda respecto al tamaño original.
 
 La práctica corresponde al curso **Estructuras de Datos y Algoritmos (2025-2)**.
 
 ---
 
-## Archivos del proyecto
+##  Archivos del proyecto
 
-- `main.cpp` → Programa principal con el menú interactivo.
-- `Nodo.h / Nodo.cpp` → Definición e implementación de la clase `Nodo`.
-- `Lista.h / Lista.cpp` → Definición e implementación de la clase `Lista`.
-- `hotel.txt` → Archivo de entrada/salida donde se guardan los huéspedes.
+- `main.cpp` → Implementación completa de Huffman + Huffman Canónico.
 - `README.md` → Este archivo, con instrucciones y explicación.
 
 ---
 
-## Compilación y ejecución
+## ⚙️ Compilación y ejecución
 
 ### Con g++ (Linux/Mac/Windows con MinGW):
 ```bash
-g++ main.cpp Lista.cpp Nodo.cpp -o hotel
-./hotel
+g++ -std=c++17 -O2 -Wall -Wextra main.cpp -o huffman
+./huffman
