@@ -1,5 +1,5 @@
 ### Creado por: Mateo Úsuga Vargas y Diego Andrés Peña Aroca usando CLion
-## Video explicativo: 
+## Video explicativo: https://youtu.be/oXngzKO6KfM
 # Práctica 2 – Huffman Canónico
 
 Este proyecto implementa en C++ el **algoritmo de Huffman** y su variante **Huffman Canónico** para compresión de texto.  
